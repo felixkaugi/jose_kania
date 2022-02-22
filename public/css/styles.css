@@ -79,13 +79,16 @@
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ft.com%2Fcontent%2F4912f032-74da-11ea-90ce-5fb6c07a27f2&psig=AOvVaw0UcNICzBuGsGC1hnICE4ZQ&ust=1643895837572000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMC8_8ST4fUCFQAAAAAdAAAAABAD');
   font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
+    background-image: url('../img/background.jpg');
+    background-repeat:no-repeat;
+    height: auto;
+  background-position: center;
+  background-size: cover;
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

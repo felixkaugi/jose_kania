@@ -1,0 +1,33 @@
+<% if(typeof errors != 'undefined'){ %>
+  <%errors.forEach(function(error){ %>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <%=error.msg %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+ <% }); %>
+<%}%>
+
+<% if(success_msg != '') { %>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <%=success_msg %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>  
+<%}%>
+
+<% if(errors_msg != '') { %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <%=errors_msg %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>  
+<%}%>
+
+<% if(error != '') { %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <%=error %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>  
+<%}%>
